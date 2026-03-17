@@ -3,9 +3,6 @@ def find_spec(smth):
     c = re.findall(f"{smth}\\n.*",b)
     cc = list(map(lambda x : x.split("\n")[1], c))
     return cc
-def printall(staca):
-    for x in staca:
-        print(x)
 file = open("raw.txt", "r", encoding="utf-8")
 a = file.readlines()
 b=""
